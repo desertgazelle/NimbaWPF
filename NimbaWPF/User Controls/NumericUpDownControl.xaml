@@ -1,0 +1,26 @@
+﻿<UserControl x:Class="NimbaWPF.User_Controls.NumericUpDownControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="50" d:DesignWidth="150"
+             BorderThickness="2">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <TextBox Name="_value" Grid.Column="0" Grid.Row="0" Grid.RowSpan="2" Text="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="8" TextChanged="_value_TextChanged"/>
+        <Button Name="_up" Grid.Column="1" Grid.Row="0" Click="_up_Click">
+            <Path Fill="Gray" Stroke="DarkGray" Data="F1 M 105,18 L 125,6 L 145,18Z" />
+        </Button>
+        <Button Name="_down" Grid.Column="1" Grid.Row="1" Click="_down_Click">
+            <Path Fill="Gray" Stroke="DarkGray" Data="F1 M 105,18 L 125,24 L 145,18Z" />
+        </Button>        
+    </Grid>
+</UserControl>

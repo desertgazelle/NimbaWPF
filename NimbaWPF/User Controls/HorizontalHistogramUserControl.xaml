@@ -1,0 +1,37 @@
+﻿<UserControl x:Class="NimbaWPF.HorizontalHistogramUserControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="150" d:DesignWidth="350"
+             Loaded="UserControl_Loaded">
+    <Grid Name="_grid" Background="Beige" Margin="5">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="4*"/>
+            <ColumnDefinition Name="_barColumn" Width="4*"/>
+            <ColumnDefinition Width="1.5*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <TextBlock Name="_maximumLabelLeft" Grid.Row="0" Grid.Column="0" Text="Maximum" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="5"/>
+        <TextBlock Name="_averageLabelLeft" Grid.Row="1" Grid.Column="0" Text="Average" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="5"/>
+        <TextBlock Name="_currentLabelLeft" Grid.Row="2" Grid.Column="0" Text="Current" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="5"/>
+        <TextBlock Name="_minimumLabelLeft" Grid.Row="3" Grid.Column="0" Text="Minimum" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="5"/>
+
+        <TextBlock Name="_maximumLabelRight" Grid.Row="0" Grid.Column="3" Text="100" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="5"/>
+        <TextBlock Name="_averageLabelRight" Grid.Row="1" Grid.Column="3" Text="40" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="5"/>
+        <TextBlock Name="_currentLabelRight" Grid.Row="2" Grid.Column="3" Text="50" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="5"/>
+        <TextBlock Name="_minimumLabelRight" Grid.Row="3" Grid.Column="3" Text="-20" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="5"/>
+
+        <Button Name="_maximumBar" Grid.Row="0" Grid.Column="2" Width="100" HorizontalAlignment="Left" Background="Violet" Margin="4,1,4,1"/>
+        <Button Name="_averageBar" Grid.Row="1" Grid.Column="2" Width="40" HorizontalAlignment="Left" Background="LightGray" Margin="4,1,4,1"/>
+        <Button Name="_currentBar" Grid.Row="2" Grid.Column="2" Width="50" HorizontalAlignment="Left" Background="BurlyWood" Margin="4,1,4,1"/>
+        <Button Name="_minimumBar" Grid.Row="3" Grid.Column="1" Width="20" HorizontalAlignment="Right" Background="SaddleBrown" Margin="4,1,4,1"/>
+    </Grid>
+</UserControl>

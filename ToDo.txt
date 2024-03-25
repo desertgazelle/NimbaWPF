@@ -1,0 +1,19 @@
+To do :
+
+1. Restaurer Selected après changement de température
+2. Pouvoir éditer la température en écrivant directement le chiffre désiré.
+-- 3. Fermer un fichier.
+4. Pouvoir annuler la fermeture de l'application.
+5. Rajouter un fichier resources pour les strings de langues
+6. Créer la fenêtre d'édition de la configuration
+7. Vérifier les statistiques
+8. Ajouter des statistiques pour les grossesses et les cycles de transition
+9. Modifier la vue General Statistics pour afficher les statistiques des différents cycle
+10. Modifier le Month Picker pour faciliter la sélection des mois
+
+Problème dans la logique des cycles
+- Start Pregnancy X jours avant un autre Start pregnancy
+- End Pregnancy Twice in the same pregnancy cycle
+- End Pregnancy and Period day or Start pregnancy on two consecutive days
+- Quand on set temperature, period et qu'on l'enlève par la suite, c'est comme si le cycle reste normal
+pourquoi il est nécessaire de mettre et enlever pour obtenir la couleur du cycle --> update seulement si une propriété est changée.

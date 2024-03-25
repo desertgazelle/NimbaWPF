@@ -1,0 +1,87 @@
+﻿<UserControl x:Class="NimbaWPF.User_Controls.GeneralStatisticsViewControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="800"
+             Background="Beige">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>            
+            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>            
+        </Grid.RowDefinitions>
+        <Button Name="_normalCycleDurationLabel" Grid.Column="1" Grid.Row="1" Content="Cycle Duration" Background="Transparent" BorderBrush="Brown"/>
+        <Button Name="_normalPeriodDurationLabel" Grid.Column="1" Grid.Row="2" Content="Period Duration" Background="Transparent" BorderBrush="Brown"/>
+        <Button Name="_normalNbDaysBeforeOvulationLabel" Grid.Column="1" Grid.Row="3" Content="Number of days before ovulation" Background="Transparent" BorderBrush="Brown"/>
+        <Button Name="_normalNbDaysBeforeLiquidMucusLabel" Grid.Column="1" Grid.Row="4" Content="Number of days before liquid mucus" Background="Transparent" BorderBrush="Brown"/>
+        <Button Name="_normalNbDaysBtwLiquidMucusOvulationLabel" Grid.Column="1" Grid.Row="5" Content="Number of days between liquid mucus and ovulation" Background="Transparent" BorderBrush="Brown"/>
+        <Button Name="_normalTemperatureOvulationLabel" Grid.Column="1" Grid.Row="6" Content="Temperature during ovulation" Background="Transparent" BorderBrush="Brown"/>
+        <Button Name="_minValueLabel" Grid.Column="2" Grid.Row="0" Content="Minimum Value" Background="Transparent" BorderBrush="Brown"/>
+        <Button Name="_avgValueLabel" Grid.Column="3" Grid.Row="0" Content="Average Value" Background="Transparent" BorderBrush="Brown"/>
+        <Button Name="_maxValueLabel" Grid.Column="4" Grid.Row="0" Content="Maximum Value" Background="Transparent" BorderBrush="Brown"/>
+        <Button Name="_pregnancyCycleDurationLabel" Grid.Column="1" Grid.Row="7" Content="Cycle Duration" Background="Transparent" BorderBrush="Brown"/>
+        <Button Name="_pregnancyPeriodDurationLabel" Grid.Column="1" Grid.Row="8" Content="Period Duration" Background="Transparent" BorderBrush="Brown"/>
+        <Button Name="_transitionCycleDurationLabel" Grid.Column="1" Grid.Row="9" Content="Cycle Duration" Background="Transparent" BorderBrush="Brown"/>
+        <Button Name="_transitionPeriodDurationLabel" Grid.Column="1" Grid.Row="10" Content="Period Duration" Background="Transparent" BorderBrush="Brown"/>
+        <Button Name="_normalLabel" Grid.Column="0" Grid.Row="1" Grid.RowSpan="6" Content="Normal Cycle" Background="Transparent" BorderBrush="Brown"/>
+        <Button Name="_pregnancyLabel" Grid.Column="0" Grid.Row="7" Grid.RowSpan="2" Content="Pregnancy Cycle" Background="Transparent" BorderBrush="Brown"/>
+        <Button Name="_transitionLabel" Grid.Column="0" Grid.Row="9" Grid.RowSpan="2" Content="Transition Cycle" Background="Transparent" BorderBrush="Brown"/>
+
+        <TextBlock Name="_normalCycleDurationMin" Grid.Column="2" Grid.Row="1" Text="---" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <TextBlock Name="_normalCycleDurationAvg" Grid.Column="3" Grid.Row="1" Text="---" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <TextBlock Name="_normalCycleDurationMax" Grid.Column="4" Grid.Row="1" Text="---" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+
+        <TextBlock Name="_normalPeriodDurationMin" Grid.Column="2" Grid.Row="2" Text="---" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <TextBlock Name="_normalPeriodDurationAvg" Grid.Column="3" Grid.Row="2" Text="---" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <TextBlock Name="_normalPeriodDurationMax" Grid.Column="4" Grid.Row="2" Text="---" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+
+        <TextBlock Name="_normalNbDaysBeforeOvulationMin" Grid.Column="2" Grid.Row="3" Text="---" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <TextBlock Name="_normalNbDaysBeforeOvulationAvg" Grid.Column="3" Grid.Row="3" Text="---" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <TextBlock Name="_normalNbDaysBeforeOvulationMax" Grid.Column="4" Grid.Row="3" Text="---" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+
+        <TextBlock Name="_normalNbDaysBeforeLiquidMucusMin" Grid.Column="2" Grid.Row="4" Text="---" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <TextBlock Name="_normalNbDaysBeforeLiquidMucusAvg" Grid.Column="3" Grid.Row="4" Text="---" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <TextBlock Name="_normalNbDaysBeforeLiquidMucusMax" Grid.Column="4" Grid.Row="4" Text="---" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+
+        <TextBlock Name="_normalNbDaysBtwLiquidMucusOvulationMin" Grid.Column="2" Grid.Row="5" Text="---" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <TextBlock Name="_normalNbDaysBtwLiquidMucusOvulationAvg" Grid.Column="3" Grid.Row="5" Text="---" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <TextBlock Name="_normalNbDaysBtwLiquidMucusOvulationMax" Grid.Column="4" Grid.Row="5" Text="---" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+
+        <TextBlock Name="_normalTemperatureOvulationMin" Grid.Column="2" Grid.Row="6" Text="---" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <TextBlock Name="_normalTemperatureOvulationAvg" Grid.Column="3" Grid.Row="6" Text="---" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <TextBlock Name="_normalTemperatureOvulationMax" Grid.Column="4" Grid.Row="6" Text="---" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+
+        <TextBlock Name="_pregnancyCycleDurationMin" Grid.Column="2" Grid.Row="7" Text="---" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <TextBlock Name="_pregnancyCycleDurationAvg" Grid.Column="3" Grid.Row="7" Text="---" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <TextBlock Name="_pregnancyCycleDurationMax" Grid.Column="4" Grid.Row="7" Text="---" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+
+        <TextBlock Name="_pregnancyPeriodDurationMin" Grid.Column="2" Grid.Row="8" Text="---" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <TextBlock Name="_pregnancyPeriodDurationAvg" Grid.Column="3" Grid.Row="8" Text="---" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <TextBlock Name="_pregnancyPeriodDurationMax" Grid.Column="4" Grid.Row="8" Text="---" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+
+        <TextBlock Name="_transitionCycleDurationMin" Grid.Column="2" Grid.Row="9" Text="---" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <TextBlock Name="_transitionCycleDurationAvg" Grid.Column="3" Grid.Row="9" Text="---" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <TextBlock Name="_transitionCycleDurationMax" Grid.Column="4" Grid.Row="9" Text="---" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+
+        <TextBlock Name="_transitionPeriodDurationMin" Grid.Column="2" Grid.Row="10" Text="---" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <TextBlock Name="_transitionPeriodDurationAvg" Grid.Column="3" Grid.Row="10" Text="---" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <TextBlock Name="_transitionPeriodDurationMax" Grid.Column="4" Grid.Row="10" Text="---" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+    </Grid>
+</UserControl>

@@ -1,0 +1,8 @@
+<configuration>
+  <DefaultApplication DefaultWorkingFolder="C:\Users\Stéphanie\Documents\Nimba" DefaultLanguage="English" DefaultDegreeUnit="Celsius" DefaultFirstDayOfWeek="Sunday" />
+  <DefaultNimbaConfiguration DefaultCycleDuration="28" DefaultPeriodDuration="5" DefaultNbDaysBeforeOvulation="14" DefaultNbDaysBeforeLiquidMucus="16" DefaultNbDaysBetweenLiquidMucusAndOvulation="2" DefaultOvulationComputationMode="Default" DefaultParametersSelection="UseStatistics" DefaultMaxCycleDuration="36" />
+  <UserApplication UserWorkingFolder="C:\Users\Stéphanie\Documents\Nimba" UserLanguage="English" UserDegreeUnit="Celsius" UserFirstDayOfWeek="Sunday" />
+  <UserNimbaConfiguration UserOvulationComputationMode="Default" UserParametersSelection="UseStatistics" DefaultCycleDuration="28" DefaultPeriodDuration="5" DefaultNbDaysBeforeOvulation="14" DefaultNbDaysBeforeLiquidMucus="16" DefaultNbDaysBetweenLiquidMucusAndOvulation="2" DefaultMaxCycleDuration="36" />
+  <UserApplication UserWorkingFolder="C:\Users\Stéphanie\Documents\Nimba" UserLanguage="English" UserDegreeUnit="Celsius" UserFirstDayOfWeek="Sunday" />
+  <UserNimbaConfiguration UserCycleDuration="28" UserPeriodDuration="5" UserNbDaysBeforeOvulation="14" UserNbDaysBeforeLiquidMucus="16" UserNbDaysBetweenLiquidMucusAndOvulation="2" UserOvulationComputationMode="Default" UserParametersSelection="UseStatistics" />
+</configuration>
